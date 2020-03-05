@@ -1,0 +1,29 @@
+HTML 
+
+Heading and subheading
+Calculator input/output display area
+5 rows of buttons
+
+
+JavaScript
+
+Initialise an entries array to keep all inputs, a total and 
+a temp variable.
+
+Take the text content of clicked button. 
+
+If it is a number, add to a temp value. Display this temp value 
+in the display area.
+
+If it is 'AC', clear everything and reset
+
+If it is 'CE', remove the last entry to temp value
+
+If it is another symbol, add the temp value and symbol to the entries array 
+and reset the temp value
+
+If an equals is selected, cycle through the 
+entries array performing the operations on the 
+numbers in the array.
+
+Make sure that negative numbers work correctly
