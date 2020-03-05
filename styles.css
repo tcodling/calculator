@@ -48,6 +48,11 @@ td {
     user-select: none;
 }
 
+#long {
+    height: 120px;
+    position: absolute;
+}
+
 td:hover {
     cursor: pointer;
 }
