@@ -4,22 +4,23 @@ document.querySelectorAll('td').forEach(button => button.addEventListener('click
 
 function addToInput(event) {
     let input = event.target.innerHTML
+    let display = document.getElementById('display')
     if (input === '÷') {
         input = '/'
     } else if (input === 'x') {
         input = '*'
     }
     if (input === '=') {
-        document.getElementById('display').innerHTML = eval(toCalculate)
+        display.innerHTML = eval(toCalculate)
         toCalculate = eval(toCalculate)
     } else if (input === 'AC') {
         toCalculate = ''
-        document.getElementById('display').innerHTML = ''
+        display.innerHTML = ''
     } else if (input === 'DEL') {
         toCalculate = toCalculate.slice(0, -1)
-        document.getElementById('display').innerHTML = toCalculate
+        display.innerHTML = toCalculate
     } else {
         toCalculate+= input
-        document.getElementById('display').innerHTML = toCalculate
+        display.innerHTML = toCalculate
     }
 }
