@@ -9,7 +9,7 @@ function addToInput(event) {
     } else if (input === 'x') {
         input = '*'
     }
-    if (input != '=' && input != 'AC' && input != 'CE') {
+    if (input != '=' && input != 'AC' && input != 'DEL') {
         toCalculate+= input
         document.getElementById('display').innerHTML = toCalculate
     } else if (input === '=') {
@@ -17,7 +17,7 @@ function addToInput(event) {
     } else if (input === 'AC') {
         toCalculate = ''
         document.getElementById('display').innerHTML = ''
-    } else if (input === 'CE') {
+    } else if (input === 'DEL') {
         toCalculate = toCalculate.slice(0, -1)
         document.getElementById('display').innerHTML = toCalculate
     }
