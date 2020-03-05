@@ -14,6 +14,7 @@ function addToInput(event) {
         document.getElementById('display').innerHTML = toCalculate
     } else if (input === '=') {
         document.getElementById('display').innerHTML = eval(toCalculate)
+        toCalculate = eval(toCalculate)
     } else if (input === 'AC') {
         toCalculate = ''
         document.getElementById('display').innerHTML = ''
