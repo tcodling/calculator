@@ -1,8 +1,8 @@
 let toCalculate = ''
 
-document.querySelectorAll('td').forEach(button => button.addEventListener('click', addToInput))
+document.querySelectorAll('td').forEach(button => button.addEventListener('click', pressButton))
 
-function addToInput(event) {
+function pressButton(event) {
     let input = event.target.innerHTML
     let display = document.getElementById('display')
     if (input === '÷') {
