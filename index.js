@@ -4,7 +4,6 @@ document.querySelectorAll('td').forEach(button => button.addEventListener('click
 
 function addToInput(event) {
     let input = event.target.innerHTML
-    console.log(input)
     if (input === '÷') {
         input = '/'
     } else if (input === 'x') {
